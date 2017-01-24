@@ -40,11 +40,11 @@ func SendEmail(w http.ResponseWriter, r *http.Request) {
 
 	_, email_err := ses.EnvConfig.SendEmail(from, to, e.Title, e.Body)
 
-    if email_err == nil {
+	if email_err == nil {
 		w.WriteHeader(http.StatusOK)
 		w.Write([]byte("email success"))
-    } else {
+	} else {
 		w.WriteHeader(http.StatusTeapot)
 		w.Write([]byte("email error"))
-    }
+	}
 }
