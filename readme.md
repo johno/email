@@ -17,11 +17,11 @@ go build && ./email
 
 ```sh
 func failed() {
-	curl \
-		-H "Content-Type: application/json" \
-		-X POST \
-		-d '{"title": "Oh no!","body": "My cron job failed"}' \
-		http://foo.bar
+  curl \
+    -H "Content-Type: application/json" \
+    -X POST \
+    -d '{"title": "Oh no!","body": "My cron job failed"}' \
+    http://foo.bar
 }
 
 command || failed
