@@ -1,6 +1,9 @@
 # email
 
 An email microservice to send yourself an email.
+I often use this to track cron job or long running script failures on random machines.
+
+TODO - Add some type of auth key so randos can't email you if they figure out the url
 
 #### installation
 
