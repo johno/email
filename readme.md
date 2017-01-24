@@ -21,7 +21,7 @@ func failed() {
 		-H "Content-Type: application/json" \
 		-X POST \
 		-d '{"title": "Oh no!","body": "My cron job failed"}' \
-                http://foo.bar
+		http://foo.bar
 }
 
 command || failed
